@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/style/style.css" />
+    <title>Kadea Online</title>
+  </head>
+
+  <body>
+    <header
+      class="pad-24 pad-lr-72 flex-justify-space-between flex-align-center"
+    >
+      <div>
+        <img
+          src="dist\images\KDA-logo.png"
+          alt="Logo de Kadea Online"
+          class="header__logo"
+        />
+      </div>
+
+      <nav>
+        <ul class="flex gap-36">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="cours.html">Nos cours</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Start Hero section -->
+      <section
+        class="hero-section pad-tb-72 pad-lr-72 flex gap-48 flex-align-center"
+      >
+        <div class="flex-column gap-36 hero-section__text">
+          <div>
+            <h1>
+              Apprenez à coder avec Kinshasa Digital Academy, c'est gratuit !
+            </h1>
+          </div>
+
+          <div>
+            <p>
+              Trouvez le bon cours et lancez-vous !!!
+              <br />
+              Concentrez-vous sur ce qui est nécessaire pour acquérir une
+              compétence spécifique et applicable.
+              <br />
+              Vous serez mieux outillé pour construire une carrière.
+            </p>
+          </div>
+
+          <div>
+            <button class="btn-primary">Lancez-vous</button>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="dist\images\coding-workshop-pana.png"
+            alt="Image de Coding Workshop"
+            class="hero-section__img"
+          />
+        </div>
+      </section>
+      <!-- End Hero section -->
+
+      <!-- Start Option section -->
+      <div
+        class="option-section pad-lr-72 pad-tb-72 flex-justify-space-between"
+      >
+        <article class="option-section__card text-center flex-column gap-12">
+          <div>
+            <h3>Construire une carrière</h3>
+          </div>
+
+          <div>
+            <p>
+              Nos offre sont complète, avec tout ce dont vous avez besoin pour
+              construire votre carrière.
+            </p>
+          </div>
+        </article>
+
+        <article class="option-section__card text-center flex-column gap-12">
+          <div>
+            <h3>Acquérir une compétence</h3>
+          </div>
+
+          <div>
+            <p>
+              Concentrez-vous sur ce qui est nécessaire pour acquérir une
+              compétence spécifique et applicable.
+            </p>
+          </div>
+        </article>
+
+        <article class="option-section__card text-center flex-column gap-12">
+          <div>
+            <h3>Apprenez à coder</h3>
+          </div>
+
+          <div>
+            <p>
+              Trouvez le bon cours et lancez-vous. Trouvez le bon cours et
+              pratiquez.
+            </p>
+          </div>
+        </article>
+      </div>
+      <!-- End Option section -->
+
+      <!-- Start Code Editor section -->
+      <section
+        class="editor-section pad-lr-72 pad-tb-72 gap-48 flex-justify-center flex-align-center"
+      >
+        <div>
+          <img
+            src="dist\images\code-editor.png"
+            alt="Image de Code Editor"
+            class="editor-section__img"
+          />
+        </div>
+
+        <div class="flex-column gap-36">
+          <div>
+            <h2>Commencez à coder en quelques secondes</h2>
+          </div>
+
+          <div>
+            <p>
+              Allez-y, essayez. Grâce à notre environnement d'apprentissage
+              pratique, vous écrirez du vrai code dès votre première leçon.
+            </p>
+          </div>
+
+          <div>
+            <button class="btn-primary">Lancez-vous</button>
+          </div>
+        </div>
+      </section>
+      <!-- End Code Editor section -->
+
+      <!-- Start Learn section -->
+      <section class="learn-section flex-column gap-48 pad-lr-72 pad-tb-72">
+        <div class="flex-justify-center">
+          <h2>Démarrez votre apprentissage</h2>
+        </div>
+
+        <div
+          class="flex-justify-space-between gap-72 flex-align-center max-width-full"
+        >
+          <article class="learn-section__card text-center">
+            <h3>HTML et HTML5 de base</h3>
+          </article>
+
+          <article class="learn-section__card text-center">
+            <h3>Les bases du CSS</h3>
+          </article>
+
+          <article class="learn-section__card text-center">
+            <h3>Conception visuelle appliquée</h3>
+          </article>
+        </div>
+
+        <div>
+          <p>
+            <a href="#">Voir plus de cours -></a>
+          </p>
+        </div>
+      </section>
+      <!-- End Learn section -->
+
+      <!-- Start Contact section -->
+      <section class="contact-section pad-lr-72 pad-tb-72 gap-48 flex-column">
+        <div class="flex-justify-center">
+          <h2>Écrivez-nous !</h2>
+        </div>
+
+        <div>
+          <form class="flex-column gap-36">
+            <div class="flex-justify-space-between pad-lr-72">
+              <!-- Nom -->
+              <div class="flex-column gap-12">
+                <div>
+                  <label for="name">Votre nom</label>
+                </div>
+
+                <div>
+                  <input type="text" name="nom" id="name" />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex-column gap-12">
+                <div>
+                  <label for="email">Votre email</label>
+                </div>
+
+                <div>
+                  <input type="email" name="email" id="email" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="flex-column gap-12 pad-lr-72">
+              <div>
+                <label for="message">Votre message</label>
+              </div>
+
+              <div>
+                <textarea name="message" id="message"></textarea>
+              </div>
+            </div>
+
+            <div class="pad-lr-72 flex-justify-end">
+              <button class="btn-primary">Envoyer un message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End Contact section -->
+    </main>
+
+    <footer class="flex-column pad-tb-72 gap-48">
+      <div class="flex-justify-center">
+        <img
+          src="dist\images\KDA-logo.png"
+          alt="Logo de Kadea Online"
+          class="footer__logo"
+        />
+      </div>
+
+      <div class="footer__content flex-justify-center text-center">
+        <p>
+          Texaf Digital Campus
+          <br />
+          <span>
+            Concession COTEX N° 63 Avenue Colonel Mondjiba
+            <br />
+            Commune de Ngaliema - Kinshasa
+          </span>
+        </p>
+      </div>
+
+      <div class="flex-justify-center gap-36">
+        <div>
+          <a href="#">
+            <img src="dist\icons\facebook.svg" alt="logo facebook" />
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img src="dist\icons\linkedin.svg" alt="logo linkedin" />
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img src="dist\icons\twitter.svg" alt="logo twitter" />
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img src="dist\icons\instagram.svg" alt="logo instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

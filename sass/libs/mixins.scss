@@ -1,0 +1,10 @@
+@mixin hover-effect($color: #d92950) {
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin font-weight($weight: 700, $line-height: 27) {
+  font-weight: $weight;
+  line-height: $line-height * 1px;
+}
