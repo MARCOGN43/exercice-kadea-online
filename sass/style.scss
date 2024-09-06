@@ -16,67 +16,51 @@ $color-active: #d92950;
 
 // ------------------------- //
 
+/* UNIVERSEL */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   font-family: "Poppins";
   font-size: 18px;
 }
 
 /* FLEX */
-
 .flex {
   display: flex;
 }
-
 .flex-justify-center {
   display: flex;
   justify-content: center;
 }
-
 .flex-align-center {
   display: flex;
   align-items: center;
 }
-
 .flex-justify-space-between {
   display: flex;
   justify-content: space-between;
 }
-
 .flex-justify-end {
   display: flex;
   justify-content: flex-end;
 }
-
 .flex-column {
   display: flex;
   flex-direction: column;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* PADDING */
-
-.pad-12 {
-  padding: 12px;
-}
 .pad-24 {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
-.pad-36 {
-  padding: 36px;
-}
-.pad-48 {
-  padding: 48px;
-}
-.pad-60 {
-  padding: 60px;
-}
-
 .pad-tb-72 {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -87,7 +71,6 @@ html {
 }
 
 /* GAP */
-
 .gap-12 {
   gap: 12px;
 }
@@ -100,15 +83,11 @@ html {
 .gap-48 {
   gap: 48px;
 }
-.gap-60 {
-  gap: 60px;
-}
 .gap-72 {
   gap: 72px;
 }
 
 /* DECORATION */
-
 li {
   list-style: none;
 }
@@ -120,58 +99,64 @@ a {
 
   @include hover-effect($color-active);
 }
+.link-active {
+  color: $color-active;
 
-.text-center {
-  text-align: center;
+  &:hover {
+    color: rgba($color: $color-active, $alpha: 0.8);
+  }
 }
 
-/* TEXTE */
-
+/* TEXT */
 h1 {
   font-size: 36px;
   @include font-weight(700, 54);
 }
-
 h3 {
   font-size: 18px;
   @include font-weight(700, 30);
 }
-
 p {
   @include font-weight(400, 27);
 }
 
-/* AUTRES */
-
-.max-width-full {
-  max-width: 100%;
-}
-
 /* BUTTON */
-
 .btn-primary {
   border: none;
   border-radius: 9px;
-
   padding: 12px 24px;
-
   background-color: $color-active;
-
+  border: 1px solid $color-active;
   color: $white;
   font-size: 18px;
   @include font-weight(700, 27);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
 
+  &:hover {
+    background-color: transparent;
+    color: $color-active;
+    border: 1px solid $color-active;
+  }
+}
+.btn-secondary {
+  border: 1px solid $color-active;
+  border-radius: 9px;
+  padding: 12px 24px;
+  background-color: $color-active;
+  color: $white;
+  font-size: 18px;
+  @include font-weight(700, 27);
   cursor: pointer;
 
   &:hover {
-    background-color: $white;
-    color: $color-active;
-    border: 1px solid $bg-secondary;
+    background-color: rgba($color: transparent, $alpha: 0.2);
+    color: rgba($color: $color-active, $alpha: 1);
+    border: 1px solid $white;
   }
 }
 
 /* HEADER */
-
 .header__logo {
   width: 116px;
   height: 36px;
@@ -180,7 +165,6 @@ p {
 /* MAIN */
 
 /* HERO SECTION */
-
 .hero-section {
   background-color: $white;
   color: $font-primary;
@@ -189,19 +173,16 @@ p {
     color: $font-secondary;
   }
 }
-
 .hero-section__img {
   width: 564px;
   height: 376px;
 }
 
 /* OPTION SECTION */
-
 .option-section {
   background-color: $bg-primary;
   color: $font-primary;
 }
-
 .option-section__card {
   width: 325px;
   border: 1px solid #252525;
@@ -211,26 +192,27 @@ p {
   h3 {
     font-size: 20px;
   }
+
+  &:hover {
+    background-color: $color-active;
+    color: $white;
+  }
 }
 
 /* EDITOR OPTION */
-
 .editor-section {
   background-color: $bg-secondary;
   color: $white;
 }
-
 .editor-section__img {
   width: 561px;
   height: 296px;
 }
 
 /* LEARN SECTION */
-
 .learn-section {
   color: $font-primary;
 }
-
 .learn-section__card {
   width: 100%;
   height: 100%;
@@ -241,35 +223,32 @@ p {
 }
 
 /* CONTACT SECTION */
-
 .contact-section {
   background-color: $bg-primary;
   color: $font-primary;
 }
-
-input {
-  width: 477px;
-  height: 57px;
+.contact-section input {
+  width: 35vw;
+  height: 60px;
   border-radius: 9px;
   border: 1px solid $font-primary;
   background-color: transparent;
+  padding: 12px;
 }
-
-textarea {
+.contact-section textarea {
   width: 100%;
   height: 167px;
   border-radius: 9px;
   border: 1px solid $font-primary;
   background-color: transparent;
+  padding: 12px;
 }
 
 /* FOOTER */
-
 .footer__logo {
   width: 116px;
   height: 36px;
 }
-
 .footer__content {
   p {
     @include font-weight(700, 27);
@@ -280,12 +259,9 @@ textarea {
   }
 }
 
-/* -------------------- */
-
 /*  COURS */
 
 /* HERO OPTION */
-
 .cours__hero-section {
   background-color: $bg-primary;
   color: $font-primary;
@@ -294,24 +270,20 @@ textarea {
     font-size: 36px;
   }
 }
-
 .cours__hero-section__img {
   width: 561px;
   height: 296px;
 }
 
 /* LEARN SECTION */
-
 .learn-section {
   color: $font-primary;
 }
-
 .learn-section__cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 48px;
 }
-
 .learn-section__card {
   width: 100%;
   height: 100%;
@@ -319,4 +291,8 @@ textarea {
   border-radius: 9px;
   padding: 48px 24px;
   background-color: $bg-primary;
+}
+
+.menu-burger {
+  display: none;
 }
