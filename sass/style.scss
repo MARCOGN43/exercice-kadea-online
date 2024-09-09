@@ -148,10 +148,11 @@ p {
   font-size: 18px;
   @include font-weight(700, 27);
   cursor: pointer;
+  transition: all ease-in-out 0.3s;
 
   &:hover {
     background-color: rgba($color: transparent, $alpha: 0.2);
-    color: rgba($color: $color-active, $alpha: 1);
+    color: rgba($color: $white, $alpha: 1);
     border: 1px solid $white;
   }
 }
@@ -188,6 +189,7 @@ p {
   border: 1px solid #252525;
   border-radius: 9px;
   padding: 24px 12px;
+  transition: all ease-in-out 0.3s;
 
   h3 {
     font-size: 20px;
@@ -242,6 +244,7 @@ p {
   border: 1px solid $font-primary;
   background-color: transparent;
   padding: 12px;
+  resize: none;
 }
 
 /* FOOTER */
